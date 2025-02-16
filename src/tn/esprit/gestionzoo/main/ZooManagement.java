@@ -1,6 +1,6 @@
-import java.util.Scanner;
+package tn.esprit.gestionzoo.main;
 
- class ZooManagement {
+class ZooManagement {
     public static void main(String[] args) {
         Animal lion=new Animal("El branda9","lion",15,true);
         Animal lion2=new Animal("El branda9","lion",15,true);
