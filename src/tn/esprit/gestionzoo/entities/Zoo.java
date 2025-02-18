@@ -32,17 +32,17 @@ public class Zoo {
         // Ajouter l'animal à la première case vide
         for (int i = 0; i < animals.length; i++) {
             if (animals[i] == null) {
-                if(animals[i].age>=0){
-                    animals[i] = animal;  // Ajout de l'animal
-                    System.out.println("tn.esprit.gestionzoo.entities.Animal added at index: " + i);
-                    return true;
-                }
-                else{
+
+                animals[i] = animal;  // Ajout de l'animal
+                System.out.println("tn.esprit.gestionzoo.entities.Animal added at index: " + i);
+                return true;
+            }
+            else{
                     System.out.println("tn.esprit.gestionzoo.entities.Animal not added (invalid age)");
                     return false;
                 }
 
-            }
+
         }
         System.out.println("tn.esprit.gestionzoo.entities.Animal not added (no space available)");
         return false;  // Ce cas ne devrait normalement jamais être atteint à cause de la vérification de `isZooFull()`
